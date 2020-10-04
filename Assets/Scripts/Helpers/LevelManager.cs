@@ -25,7 +25,7 @@ public class LevelManager : ContextManager
 
 	public override void Start()
     {
-		FindObjectOfType<UIConsole>().AddStarter(levelStarter);
+		FindObjectsOfType<UIConsole>().First(s => s.gameObject.scene == this.gameObject.scene).AddStarter(levelStarter);
     }
 
 	public void PlayPause() {

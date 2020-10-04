@@ -10,6 +10,6 @@ public class MMCreator : MonoBehaviour
     void Start()
     {
 		MusicManager.Instance.SetTrack(clip);
-		MusicManager.Instance.SetVolume(0.2f);
+		MusicManager.Instance.SetVolume(0.1f);
 	}
 }
